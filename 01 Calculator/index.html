@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" data-theme>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="contents">
+        <header>
+            <div class="calculator-navbar">
+                <div class="calculator-header">
+                    <div class="hamburger-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="active-link">
+                        <h2 class="link-indicator">Calculator</h2>
+                    </div>
+                    <button class="theme-changer-btn">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </div>
+                <div class="calculator-links">
+                    <button class="close-btn">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <button data-target-id="calculator" class="tab-link active">calculator</button>
+                    <button data-target-id="history" class="tab-link">history</button>
+                </div>
+            </div>
+        </header>
+        <div id="calculator" class="calculator content show-content">
+            <div class="display">
+                <div class="prev-value"></div>
+                <div class="current-value">0</div>
+            </div>
+            <div class="keyboard">
+                <div class="left-key">
+                    <div class="utils">
+                        <button data-all-clear>AC</button>
+                        <button data-delete>
+                            <i class="fas fa-backspace"></i>
+                        </button>
+                        <button data-invers>±</button>
+                    </div>
+                    <div class="numpad">
+                            <button data-number>7</button>
+                            <button data-number>8</button>
+                            <button data-number>9</button>
+                            <button data-number>4</button>
+                            <button data-number>5</button>
+                            <button data-number>6</button>
+                            <button data-number>1</button>
+                            <button data-number>2</button>
+                            <button data-number>3</button>
+                            <button data-number>0</button>
+                            <button data-number>.</button>
+                    </div>
+                </div>
+                <div class="right-key">
+                    <div class="operators">
+                        <button data-operator class="operator">÷</button>
+                        <button data-operator class="operator">×</button>
+                        <button data-operator class="operator">+</button>
+                        <button data-operator class="operator">-</button>
+                        <button data-equals class="equals">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="history" class="history content">
+            <div class="history-list">
+                <article class="history-item">
+                    <p class="input-value">2+4</p>
+                    <p class="result">=6</p>
+                </article>
+            </div>
+            <button class="clear-history">clear history</button>
+        </div>
+    </div>
+<script type="module" src="./scripts/index.js"></script>
+</body>
+</html>
