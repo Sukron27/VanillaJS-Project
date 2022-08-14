@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/preloader.css">
+    <title>Gallery</title>
+</head>
+<body>
+    <div class="preloader-container">
+        <div class="preloader"></div>
+    </div>
+    <main>
+        <section class="section indonesia-img-container">
+            <img src="./images/indonesia/image-indonesia-1.jpg" 
+            alt="image-indo"
+            data-id="1"
+            title="cewe tjakep indonesia"
+            class="img"
+            >
+            <img src="./images/indonesia/image-indonesia-2.jpg" 
+            alt="image-indo"
+            data-id="2"
+            title="pantai indonesia"
+            class="img"
+            >
+            <img src="./images/indonesia/image-indonesia-3.jpg" 
+            alt="image-indo"
+            data-id="3"
+            title="candi prambanan"
+            class="img"
+            >
+            <img src="./images/indonesia/image-indonesia-4.jpg" 
+            alt="image-indo"
+            data-id="4"
+            title="candi borobudur"
+            class="img"
+            >
+            <img src="./images/indonesia/image-indonesia-5.jpg" 
+            alt="image-indo"
+            data-id="5"
+            title="topeng hekel indonesia"
+            class="img"
+            >
+            <img src="./images/indonesia/image-indonesia-6.jpg" 
+            alt="image-indo"
+            data-id="6"
+            title="dataran tinggi indonesia"
+            class="img"
+            >
+        </section>
+        <section class="section japan-img-container">
+            <img src="./images/japan/image-japan-1.jpg" 
+            alt="image-japan"
+            data-id="1"
+            title="gang saiber pang"
+            class="img"
+            >
+            <img src="./images/japan/image-japan-2.jpg" 
+            alt="image-japan"
+            data-id="2"
+            title="gang mangga jepang"
+            class="img"
+            >
+            <img src="./images/japan/image-japan-3.jpg" 
+            alt="image-japan"
+            data-id="3"
+            title="perduaan jalan genjeh"
+            class="img"
+            >
+            <img src="./images/japan/image-japan-4.jpg" 
+            alt="image-japan"
+            data-id="4"
+            title="tempat latihan samurai"
+            class="img"
+            >
+            <img src="./images/japan/image-japan-5.jpg" 
+            alt="image-japan"
+            data-id="5"
+            title="cyberpunk 2020"
+            class="img"
+            >
+            <img src="./images/japan/image-japan-6.jpg" 
+            alt="image-japan"
+            data-id="6"
+            title="tokyo malam hari"
+            class="img"
+            >
+            <img src="./images/japan/image-japan-7.jpg" 
+            alt="image-japan"
+            data-id="7"
+            title="tokyo siang hari"
+            class="img"
+            >
+        </section>
+        <div id="modal" class="modal">
+            <button class="close-modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-content">
+                <div class="gallery-content">
+                    <div class="button-control-container">
+                        <button class="btn prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="btn next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <img src="./images/indonesia/image-indonesia-1.jpg" alt="main-image"
+                    class="main-image"
+                    >
+                </div>
+                <h3 class="image-name">image name</h3>
+                <div class="modal-images">
+                    <div class="modal-images-grid">
+                        <img src="./images/indonesia/image-indonesia-1.jpg" alt="image-indo1"
+                        data-id="1"
+                        class="modal-img active"
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+<script src="./scripts/app.js"></script>
+</body>
+</html>

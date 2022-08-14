@@ -1,0 +1,32 @@
+.preloader-container {
+    position: fixed;
+    inset: 0;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.preloader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid blue;
+    border-right: 16px solid green;
+    border-bottom: 16px solid red;
+    width: 120px;
+    height: 120px;
+    z-index: 10;
+    animation: spin 2s linear infinite;
+}
+
+.hide-preloader {
+    display: none;
+    visibility: hidden;
+    z-index: -99;
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
